@@ -7,3 +7,40 @@ const evens = [2, 4, 6];
 const numbers = odds.concat(evens, 96);
 console.log(numbers);  // [1, 3, 9, 2, 4, 6, 96]
 
+
+// includes checks if an element is present or not
+// returns true if found, else false
+// 2nd parameter - optional, start position, default is 0
+const nums = [1, 2, 3, 4];
+let isOnePresent = nums.includes(1);
+console.log(isOnePresent);  // true
+const isFivePresent = nums.includes(5);
+console.log(isFivePresent); // false
+isOnePresent = nums.includes(1, 1);
+console.log(isOnePresent);  // false, since array search starts from index 1
+
+
+// indexOf method returns the index of specified element
+// 2nd optional parameter, start position, default is 0
+// returns the first found position, if there are duplicates
+// returns -1 if not found
+const fruits = ['apple', 'banana', 'grapes'];
+let appleIndex = fruits.indexOf('apple');
+console.log(appleIndex);  // 0, since index of apple is zero
+const kiwiIndex = fruits.indexOf('kiwi');
+console.log(kiwiIndex);   // -1, since there is no kiwi
+appleIndex = fruits.indexOf('apple', 1);
+console.log(appleIndex);  // -1, since there is no apple from index 1
+
+
+// lastIndexOf method returns the index of specified element from last position
+// 2nd optional parameter, start position, default is last to first
+// returns the first found position, if there are duplicates
+// returns -1 if not found
+const fruits = ['apple', 'banana', 'grapes', 'apple'];
+let appleIndex = fruits.indexOf('apple');
+console.log(appleIndex);  // 3, since index of apple from last position is 3
+const kiwiIndex = fruits.indexOf('kiwi');
+console.log(kiwiIndex);   // -1, since there is no kiwi
+appleIndex = fruits.indexOf('apple', 2);
+console.log(appleIndex);  // 0, since there is apple at index 0 from position 2 to 0
