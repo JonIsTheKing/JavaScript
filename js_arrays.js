@@ -63,3 +63,15 @@ let fullName = names.join();
 console.log(fullName); // John,Smith
 fullName = names.join('-');
 console.log(fullName); // John-Smith
+
+
+// slice method returns a sub array from start to end-1
+// two optional parameters
+// 1st optional parameter - start, default is 0
+// 2nd optional parameter - end, default is length of array-1
+// returns a new array
+const squares = [1, 4, 9, 16, 25];
+let slicedArray = squares.slice(1);
+console.log(slicedArray);  // [4, 9, 16, 25]
+slicedArray = squares.slice(1, 3);
+console.log(slicedArray);  // [4, 9], since excluding index 3
