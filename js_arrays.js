@@ -45,8 +45,16 @@ console.log(kiwiIndex);   // -1, since there is no kiwi
 appleIndex = fruits.lastIndexOf('apple', 2);
 console.log(appleIndex);  // 0, since there is apple at index 0 from position 2 to 0
 
+// toString method returns the array as string
+// separator is ,
+// does not modify the original array
+// returns a string
+const names = ['John', 'Smith'];
+let fullName = names.toString();
+console.log(fullName); // John,Smith
 
-// join methods returns the array as string
+
+// join method returns the array as string
 // optional parameter is separator, default is ,
 // does not modify the original array
 // returns a string
