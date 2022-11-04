@@ -38,9 +38,9 @@ console.log(appleIndex);  // -1, since there is no apple from index 1
 // returns the first found position, if there are duplicates
 // returns -1 if not found
 const fruits = ['apple', 'banana', 'grapes', 'apple'];
-let appleIndex = fruits.indexOf('apple');
+let appleIndex = fruits.lastIndexOf('apple');
 console.log(appleIndex);  // 3, since index of apple from last position is 3
-const kiwiIndex = fruits.indexOf('kiwi');
+const kiwiIndex = fruits.lastIndexOf('kiwi');
 console.log(kiwiIndex);   // -1, since there is no kiwi
-appleIndex = fruits.indexOf('apple', 2);
+appleIndex = fruits.lastIndexOf('apple', 2);
 console.log(appleIndex);  // 0, since there is apple at index 0 from position 2 to 0
