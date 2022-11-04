@@ -1,3 +1,12 @@
+// includes
+// indexOf
+// lastIndexOf
+// toString
+// join
+
+// concat
+// slice
+
 // concat method joins one or more arrays
 // adds an element to the array as well
 // does not modify the array
